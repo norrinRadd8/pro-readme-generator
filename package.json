@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/norrinRadd8/pro-readme-generator/issues"
   },
-  "homepage": "https://github.com/norrinRadd8/pro-readme-generator#readme"
+  "homepage": "https://github.com/norrinRadd8/pro-readme-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.5"
+  }
 }
