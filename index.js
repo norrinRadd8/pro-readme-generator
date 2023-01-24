@@ -7,6 +7,11 @@ const generateMarkdown = require("./utils/generateMarkdown");
 function prompts() {
     inquirer.prompt([
         {
+            name: 'repo',
+            message: 'Please enter your GitHub repo name',
+            type: 'input',
+        },
+        {
             name: 'title',
             message: 'What is the title of your README file?',
             type: 'input'
@@ -14,12 +19,21 @@ function prompts() {
         {
             name: 'description',
             message: 'Please enter a description.',
-            type: 'input'
+            type: 'input',
+            default : "Your time should be focused on creating something amazing. A project that solves a problem and helps others.You shouldn't be doing the same tasks over and over like creating a README from scratch. You should implement DRY principles to the rest of your life :smile",
+            
+        },
+        {
+            name: 'technology',
+            message: 'Please choose the technologies used.',
+            choices: ['Bootstrap', 'CSS3', 'HTML5', 'JavaScript', 'JQuery', 'Node.js'],
+            type: 'checkbox'
         },
         {
             name: 'installation',
             message: 'Please enter installation instructions.',
-            type: 'input'
+            type: 'input',
+            default : 'npm install'
         },
         {
             name: 'usage',
@@ -35,7 +49,8 @@ function prompts() {
         {
             name: 'contributing',
             message: 'Please enter contribution guidelines',
-            type: 'input'
+            type: 'input',
+            
         },
         {
             name: 'tests',
@@ -49,7 +64,7 @@ function prompts() {
         }, 
         {
             name: 'profile',
-            message: 'Please enter your GitHub profile address',
+            message: 'Please enter your GitHub profile name',
             type: 'input'
             
         }
@@ -62,7 +77,7 @@ function prompts() {
 
 // function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => (err ? console.error(err) : console.log('Success!')))
+    fs.writeFile(fileName, data, (err) => (err ? console.error(err) : console.log(`Your README file has been successfully generated.`)))
  }
 
 // function to initialize program
