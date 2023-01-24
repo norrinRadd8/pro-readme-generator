@@ -51,6 +51,7 @@ function prompts() {
             name: 'profile',
             message: 'Please enter your GitHub profile address',
             type: 'input'
+            
         }
     ]) 
     .then((answers) => {

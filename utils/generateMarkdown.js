@@ -59,7 +59,7 @@ ${tests}
 This project is covered under the ${license} license.
 ## Questions
 Any questions please email me - ${email} \n
-My GitHub Link is - ${profile}
+My GitHub Link is - https://github.com/${profile}
     `
 }
 module.exports = generateMarkdown;
