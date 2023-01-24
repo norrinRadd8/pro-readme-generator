@@ -37,7 +37,7 @@ function prompts() {
         },
         {
             name: 'usage',
-            message: 'Please enter usage information',
+            message: 'Please enter a directory path to your file usage information',
             type: 'input'
         },
         {
