@@ -61,7 +61,7 @@ ${installation}
 
 ## Contributing 
 ${contributing}
-- Fork the Project (https://github.com/${profile}/${repo}) 
+- Fork the Project (https://github.com/${profile}/${repo}.git) 
 - Create your Feature Branch (git checkout -b feature/AmazingFeature) 
 - Commit your Changes (git commit -m 'Add some AmazingFeature') 
 - Push to the Branch (git push origin feature/AmazingFeature) 
